@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crousel</title>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.carousel {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.carousel-items {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+</style>
+<body>
+    div class="carousel">
+    <button class="prev">❮</button>
+    <div class="carousel-items">
+        <div class="carousel-item active">
+            <p>"Review 1: Great product!"</p>
+            <p>- Customer 1</p>
+        </div>
+        <div class="carousel-item">
+            <p>"Review 2: Excellent service."</p>
+            <p>- Customer 2</p>
+        </div>
+        <div class="carousel-item">
+            <p>"Review 3: Would buy again."</p>
+            <p>- Customer 3</p>
+        </div>
+    </div>
+    <button class="next">❯</button>
+</div>
+<script src="./Index.js"></script>
+</body>
+</html>
